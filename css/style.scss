@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 5fr 5fr;
+    grid-template-areas: 
+                        "myHeader myHeader myHeader"
+                        "myMain myMain myMain"
+                        "myFooter myFooter myFooter";
+    
+    header{
+        grid-area: myHeader;
+        background-color: blue;
+        /*nav{
+            grid-area: "myNav";
+            background-color: red;
+        }
+        .cover{
+            grid-area: "myCover";
+            background-color: blue;
+        }*/
+        nav{
+            display: flex;
+            justify-content: space-between;
+            .topmenu{
+                display: flex;
+                width: 200px;
+                div{
+                    width: calc(1/3);
+                    background-color: white;
+                }
+            }
+            .logo{
+                width: 200px;
+                background-image: url(https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-6.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+    }
+    main{
+        grid-area: myMain;
+        background-color: green;
+
+    }
+    footer{
+        grid-area: myFooter;
+        background-color: red;
+        display: grid;
+        grid-template-columns: 2fr 3fr 2fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+                        "myProfile myTweets myFeed";
+
+        .profile{
+            grid-area: myProfile;
+            background-color:grey;
+            display: flex;
+            justify-content: center;
+            .profileimage{
+                height: 200px;
+                width: 200px;
+                border: 2px white solid;
+                border-radius: 5px;
+                margin-top: -6.5rem;
+            }
+        }
+        .tweets{
+            grid-area: myTweets;
+            background-color: greenyellow;
+        }
+        .feed{
+            grid-area: myFeed;
+            background-color: hotpink;
+        }   
+
+    }
+}
