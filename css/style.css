@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
   display: grid;
-  height: 100vh;
+  height: 150vh;
   font-family: Arial, Helvetica, sans-serif;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 0.5fr 5fr 5fr;
@@ -21,7 +21,7 @@ body {
       height: 50px; }
       body header nav .topmenu {
         display: flex;
-        width: 200px; }
+        width: 400px; }
         body header nav .topmenu div {
           background-color: white;
           padding-right: 10px;
